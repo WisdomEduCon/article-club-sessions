@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Article Club — Session Brief · Mexico's Broken Economy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px}
+body{font-family:'Jost',sans-serif;font-weight:300;background:#f5f2eb;color:#1a1814;-webkit-font-smoothing:antialiased}
+
+.page{max-width:680px;margin:0 auto;background:#faf8f3}
+
+/* ── HEADER ── */
+.header{background:#1a1f3c;padding:0}
+.header-top{display:flex;align-items:center;justify-content:space-between;padding:20px 36px 0}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:500;letter-spacing:.06em;color:#fff}
+.logo span{color:#f0b429}
+.issue-num{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.35)}
+.header-hero{padding:32px 36px 36px}
+.session-label{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:#f0b429;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.session-label::before{content:'';display:block;width:16px;height:1px;background:#f0b429}
+.header-title{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;line-height:1.1;color:#fff;margin-bottom:8px}
+.header-title em{font-style:italic;color:#f0b429}
+.header-source{font-size:.72rem;color:rgba(255,255,255,.4);letter-spacing:.06em;margin-bottom:24px}
+.header-standfirst{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;font-weight:300;line-height:1.6;color:rgba(255,255,255,.7);border-left:2px solid #f0b429;padding-left:16px}
+
+/* ── META BAR ── */
+.meta-bar{background:#232850;display:flex;flex-wrap:wrap;gap:0}
+.meta-item{flex:1;min-width:140px;padding:14px 20px;border-right:1px solid rgba(255,255,255,.06)}
+.meta-item:last-child{border-right:none}
+.meta-label{font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:4px}
+.meta-value{font-size:.82rem;font-weight:500;color:#f0b429}
+
+/* ── BODY ── */
+.body-wrap{padding:36px 36px 0}
+
+.section-eye{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:#d4921a;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.section-eye::before{content:'';display:block;width:12px;height:1px;background:#d4921a}
+
+.section-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:400;color:#1a1814;margin-bottom:12px;line-height:1.2}
+
+.body-text{font-size:.9rem;line-height:1.85;color:#5a5750;margin-bottom:16px}
+.body-text strong{color:#1a1814;font-weight:500}
+
+.gold-rule{height:1px;background:linear-gradient(90deg,#f0b429,rgba(240,180,41,.1));margin:28px 0}
+.thin-rule{height:1px;background:#e8e3d8;margin:20px 0}
+
+/* ── CONTEXT BOX ── */
+.context-box{background:#f2ede0;border-left:3px solid #f0b429;padding:18px 20px;margin-bottom:24px}
+.context-box p{font-size:.87rem;line-height:1.8;color:#3d3a34}
+.context-box p+p{margin-top:10px}
+
+/* ── STATS ROW ── */
+.stats-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;margin-bottom:28px;background:#e8e3d8}
+.stat-cell{background:#faf8f3;padding:16px 14px;text-align:center}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;color:#1a1f3c;line-height:1}
+.stat-n em{font-style:italic;color:#d4921a}
+.stat-l{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:#888780;margin-top:4px}
+
+/* ── QUESTIONS ── */
+.questions-wrap{background:#1a1f3c;margin:0 -36px;padding:28px 36px}
+.q-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:300;color:#f0b429;margin-bottom:4px}
+.q-subtitle{font-size:.72rem;color:rgba(255,255,255,.4);margin-bottom:20px;letter-spacing:.04em}
+.question-item{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.question-item:last-child{border-bottom:none}
+.q-num{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;color:#f0b429;flex-shrink:0;width:20px;line-height:1.4}
+.q-text{font-size:.87rem;line-height:1.7;color:rgba(255,255,255,.82)}
+
+/* ── PREPARATION NOTE ── */
+.prep-box{background:#fff8e6;border:1px solid rgba(240,180,41,.4);padding:18px 20px;margin-bottom:0}
+.prep-label{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#d4921a;margin-bottom:6px}
+.prep-text{font-size:.85rem;line-height:1.75;color:#3d3a34}
+
+/* ── SESSION DETAILS ── */
+.details-wrap{padding:28px 36px}
+.details-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.detail-cell{background:#f2ede0;padding:14px 16px}
+.dc-label{font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:#888780;margin-bottom:4px}
+.dc-value{font-size:.88rem;font-weight:500;color:#1a1814;line-height:1.4}
+
+/* ── MENTOR ── */
+.mentor-block{background:#1a1f3c;padding:20px 22px;margin-bottom:20px;display:flex;gap:16px;align-items:flex-start}
+.mentor-avatar{width:44px;height:44px;border-radius:50%;background:#232850;border:1px solid rgba(240,180,41,.4);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.mentor-avatar span{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:400;color:#f0b429}
+.mentor-name{font-size:.95rem;font-weight:500;color:#fff;margin-bottom:2px}
+.mentor-role{font-size:.75rem;color:rgba(255,255,255,.45);line-height:1.5}
+.mentor-awards{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.award-pill{font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border:1px solid rgba(240,180,41,.4);color:#f0b429}
+
+/* ── CTA ── */
+.cta-wrap{text-align:center;padding:24px 20px;background:#f2ede0;margin-bottom:20px}
+.cta-text{font-size:.82rem;color:#5a5750;margin-bottom:14px;line-height:1.6}
+.cta-btn{display:inline-block;background:#1a1f3c;color:#f0b429;text-decoration:none;padding:12px 28px;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
+.cta-price{font-size:.72rem;color:#888780;margin-top:8px}
+
+/* ── FOOTER ── */
+.footer{background:#1a1814;padding:20px 36px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:.95rem;font-weight:400;color:rgba(255,255,255,.6);letter-spacing:.05em}
+.footer-logo span{color:#f0b429}
+.footer-contact{font-size:.68rem;color:rgba(255,255,255,.3);text-align:right;line-height:1.7}
+
+/* ── MOBILE ── */
+@media(max-width:520px){
+  .header-top,.header-hero,.body-wrap,.details-wrap,.footer{padding-left:20px;padding-right:20px}
+  .questions-wrap{margin:0 -20px;padding:24px 20px}
+  .header-title{font-size:1.9rem}
+  .details-grid{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:1fr}
+  .meta-bar{flex-direction:column}
+  .meta-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.06)}
+  .footer{flex-direction:column;text-align:center}
+  .footer-contact{text-align:center}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-top">
+      <div class="logo">The Article <span>Club</span></div>
+      <div class="issue-num">Session brief</div>
+    </div>
+    <div class="header-hero">
+      <div class="session-label">This week's session</div>
+      <h1 class="header-title">Mexico's<br><em>broken economy.</em></h1>
+      <div class="header-source">The Economist &nbsp;·&nbsp; Economics &amp; Politics</div>
+      <p class="header-standfirst">
+        Mexico has the geography, the trade agreements, and the investment inflows of a country that should be growing fast. So why is it stuck?
+      </p>
+    </div>
+  </div>
+
+  <!-- META BAR -->
+  <div class="meta-bar">
+    <div class="meta-item">
+      <div class="meta-label">Date</div>
+      <div class="meta-value">Sunday 19 April 2026</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Time</div>
+      <div class="meta-value">18:30 – 19:30 BST</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Format</div>
+      <div class="meta-value">Live · Zoom</div>
+    </div>
+    <div class="meta-item">
+      <div class="meta-label">Mentor</div>
+      <div class="meta-value">Tom Barrett</div>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body-wrap">
+
+    <div style="height:28px"></div>
+    <div class="section-eye">What the article is about</div>
+    <h2 class="section-title">The paradox at the heart of Mexico's economy</h2>
+
+    <div class="context-box">
+      <p>Mexico sits next to the world's largest economy, benefits from a sweeping trade agreement, and has attracted record foreign investment as companies move supply chains away from China. The peso was one of the world's best-performing currencies in 2025. By every structural measure, Mexico should be booming.</p>
+      <p>Instead, it has grown at under 1% per year for seven years. More than half its workforce operates in the informal economy — paying no taxes, receiving no state benefits, and contributing to a productivity trap that successive governments have failed to break. This week's Economist analysis asks a direct question: what exactly is broken, and why is it so hard to fix?</p>
+    </div>
+
+    <!-- STATS ROW -->
+    <div class="stats-row">
+      <div class="stat-cell">
+        <div class="stat-n"><em>&lt;1%</em></div>
+        <div class="stat-l">Average annual growth, 2018–2025</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-n"><em>54%</em></div>
+        <div class="stat-l">Workforce in informal economy</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-n"><em>July</em></div>
+        <div class="stat-l">USMCA review begins, 2026</div>
+      </div>
+    </div>
+
+    <div class="section-eye">Key themes to look for</div>
+    <h2 class="section-title">Three threads running through the article</h2>
+
+    <p class="body-text"><strong>The informality trap.</strong> Over half of Mexico's workers are outside the formal economy — not paying taxes, not accruing pension rights, not building documented skills. This is not just a welfare problem. It is a productivity problem, a fiscal problem, and a political problem. The article examines why it is so persistent and what would have to change to reverse it.</p>
+
+    <p class="body-text"><strong>The nearshoring paradox.</strong> The relocation of manufacturing from China to Mexico has generated headlines and investment flows. But nearshoring is concentrated in a narrow corridor of northern states. Most of Mexico — and most Mexican workers — have seen little benefit. The article asks whether nearshoring can transform the broader economy, or whether structural barriers will limit its reach.</p>
+
+    <p class="body-text"><strong>The institutional question.</strong> Under both former President López Obrador and current President Sheinbaum, Mexico has seen gradual erosion of independent institutions — the judiciary, regulatory bodies, and the central bank's effective independence. Macroeconomic stability has been maintained. But analysts are asking whether that stability is real, or whether it rests on foundations that are quietly weakening.</p>
+
+    <div class="gold-rule"></div>
+
+    <div class="section-eye">Also worth reading</div>
+    <p class="body-text" style="margin-bottom:28px">For students who want to go deeper: the OECD's 2026 Economic Survey of Mexico covers the fiscal deficit, labour informality, and the productivity gap in detail. The Baker Institute at Rice University has also published a useful brief on Mexico's structural growth constraints — search "Locked in Low Gear: Mexico's Struggling Economy."</p>
+
+  </div>
+
+  <!-- QUESTIONS -->
+  <div class="questions-wrap">
+    <div class="q-title">Questions to think about</div>
+    <div class="q-subtitle">Think about these before the session. Come ready to defend a view.</div>
+
+    <div class="question-item">
+      <div class="q-num">1</div>
+      <div class="q-text">Mexico has record foreign investment, a strong peso, and direct access to the US market. Why is economic growth still under 1% a year?</div>
+    </div>
+    <div class="question-item">
+      <div class="q-num">2</div>
+      <div class="q-text">More than half of Mexico's workers are in the informal economy. What causes this — and why has no government managed to reverse it?</div>
+    </div>
+    <div class="question-item">
+      <div class="q-num">3</div>
+      <div class="q-text">Nearshoring is supposed to be Mexico's big opportunity. What structural barriers might prevent it from transforming the wider economy?</div>
+    </div>
+    <div class="question-item">
+      <div class="q-num">4</div>
+      <div class="q-text">The USMCA trade agreement comes up for review in July 2026. What leverage does each side hold, and what are the realistic outcomes?</div>
+    </div>
+    <div class="question-item">
+      <div class="q-num">5</div>
+      <div class="q-text">Mexico has maintained macroeconomic stability while democratic institutions have weakened. Is that stability real — or fragile in ways that have not yet surfaced?</div>
+    </div>
+    <div class="question-item">
+      <div class="q-num">6</div>
+      <div class="q-text">If you were advising President Sheinbaum, which single structural problem would you prioritise fixing — and why that one above the others?</div>
+    </div>
+  </div>
+
+  <!-- SESSION DETAILS -->
+  <div class="details-wrap">
+    <div class="section-eye" style="margin-bottom:14px">Session details</div>
+
+    <div class="details-grid">
+      <div class="detail-cell">
+        <div class="dc-label">Date &amp; time</div>
+        <div class="dc-value">Sunday 19 April 2026<br>18:30 – 19:30 BST</div>
+      </div>
+      <div class="detail-cell">
+        <div class="dc-label">Zoom meeting</div>
+        <div class="dc-value">ID: 839 2194 0340<br>Passcode: 636744</div>
+      </div>
+      <div class="detail-cell" style="grid-column:1/-1">
+        <div class="dc-label">Zoom link</div>
+        <div class="dc-value"><a href="https://us06web.zoom.us/j/83921940340?pwd=8vLqZXNIp0rnuNphhR39o1k2eLbT2j.1" style="color:#1d9e75;text-decoration:none">Join Zoom meeting →</a></div>
+      </div>
+    </div>
+
+    <!-- MENTOR -->
+    <div class="mentor-block">
+      <div class="mentor-avatar"><span>TB</span></div>
+      <div>
+        <div class="mentor-name">Tom Barrett</div>
+        <div class="mentor-role">History undergraduate · Merton College, University of Oxford<br>Academic interests: politics, economics, international relations</div>
+        <div class="mentor-awards">
+          <span class="award-pill">First Class · Prelims</span>
+          <span class="award-pill">Fung Scholar 2024</span>
+          <span class="award-pill">Postmastership Award</span>
+          <span class="award-pill">Merton Academic Prize</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-wrap">
+      <p class="cta-text">Not yet registered for this session? Secure your place below.<br>Places are limited to keep groups small.</p>
+      <a href="https://buy.stripe.com/9B6fZj2oteUyaLjfhD0480P" class="cta-btn">Register for this session →</a>
+      <div class="cta-price">£35 per session &nbsp;·&nbsp; 60 minutes &nbsp;·&nbsp; Live online</div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div>
+      <div class="footer-logo">The Article <span>Club</span></div>
+      <div style="font-size:.65rem;color:rgba(255,255,255,.25);margin-top:3px">Wisdom Education Consultancy Ltd.</div>
+    </div>
+    <div class="footer-contact">
+      Özgür Eskaras Işık &nbsp;·&nbsp; Founder<br>
+      +44 (0)7799 334 815 &nbsp;·&nbsp; WhatsApp: +44 (0)7341 656855<br>
+      thearticle.club
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
